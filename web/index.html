@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexa Core</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="backdrop" class="backdrop hidden">
+        <form id="dialog" class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle" novalidate>
+            <h1 id="dialogTitle" class="dialog-title"></h1>
+            <p id="dialogText" class="dialog-text"></p>
+            <div id="fields" class="fields"></div>
+            <div id="menu" class="menu hidden" role="listbox"></div>
+            <div class="actions">
+                <button id="cancelBtn" type="button" class="btn ghost"><span id="cancelLabel"></span> <kbd id="cancelKey">Échap</kbd></button>
+                <button id="submitBtn" type="submit" class="btn primary"><span id="submitLabel"></span> <kbd id="submitKey">Entrée</kbd></button>
+            </div>
+        </form>
+    </div>
+
+    <div id="help" class="help hidden left" aria-live="polite"><span id="helpText" class="help-text"></span></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

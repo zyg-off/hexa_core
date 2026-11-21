@@ -1,0 +1,8 @@
+Dossier des logs du jour (écrits par hexa_core).
+
+hexa_core écrit ici un fichier par jour : jour_01.log, jour_02.log… Il y en a autant que le nombre de jours de
+conservation (Logs.keepDays dans config_server.lua, 30 par défaut). Quand le cycle recommence, le plus ancien fichier
+est réécrit : rien ne grossit sans fin et vous n'avez rien à supprimer.
+
+Ne supprimez pas ce dossier : FiveM ne sait pas le recréer.
+Les mêmes logs sont aussi dans la table SQL hexa_logs (supprimés au bout de keepDays jours).
